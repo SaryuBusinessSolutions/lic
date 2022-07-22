@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "install": "npm i -g tailwindcss gulp gulp-concat gulp-csso gulp-uglify",
+    "link": "npm link gulp gulp-concat gulp-csso gulp-uglify",
+    "tailwindcss": "tailwindcss -i ./src/_static/css/input.css -o ./src/_static/css/tailwind.css",
+    "generate": "picogen clean && npm run tailwindcss && gulp buildcss buildjs && picogen generate -s -f -p",
+    "push": "node -e \"const mssg = 'BUILD - ' + process.argv[1]; require('child_process').execSync('git add . && git commit -m \\\"' + mssg + '\\\" && git push', { stdio:[0, 1, 2] })\"",
+    "update": "npm run generate && npm run push"
+  },
+  "name": "bsc",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
