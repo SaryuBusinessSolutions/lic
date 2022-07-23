@@ -1,13 +1,13 @@
 {
-  "websiteurl": "https://examle.com",
+  "websiteurl": "https://careerinlic.com",
   "devurl": "http://localhost:4000",
   "imgOptimizer": "//images.weserv.nl/?url=",
-  "title": "dummy title",
-  "description": "dummy description",
-  "copyright": "dummy copyright",
-  "image": "image.jpg",
+  "title": "Career in LIC - Become a LIC Agent",
+  "description": "At Life Insurance Corporation(LIC) of India, we encourage individuals to join LIC as a insurance advisor by becoming a LIC agent.",
+  "copyright": "copyright 2022 CareerInLic",
+  "image": "favicon.ico",
   "favicon": "favicon.ico",
-  "removehtmlext": false,
-  "removehtmlextgen": false,
+  "removehtmlext": true,
+  "removehtmlextgen": true,
   "postPath": "/post"
 }

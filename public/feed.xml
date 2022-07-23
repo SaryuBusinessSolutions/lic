@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>dummy title</title>
-        <link>https://examle.com</link>
-        <description>dummy description</description>
-        <lastBuildDate>Fri, 22 Jul 2022 11:19:46 GMT</lastBuildDate>
+        <title>Career in LIC - Become a LIC Agent</title>
+        <link>https://careerinlic.com</link>
+        <description>At Life Insurance Corporation(LIC) of India, we encourage individuals to join LIC as a insurance advisor by becoming a LIC agent.</description>
+        <lastBuildDate>Sat, 23 Jul 2022 06:58:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
-        <copyright>dummy copyright</copyright>
+        <copyright>copyright 2022 CareerInLic</copyright>
     </channel>
 </rss>
