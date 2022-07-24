@@ -7,5 +7,7 @@
   "copyright": "copyright 2022 CareerInLic",
   "image": "favicon.ico",
   "favicon": "favicon.ico",
+  "removehtmlext": true,
+  "removehtmlextgen": true,
   "postPath": "/post"
 }
