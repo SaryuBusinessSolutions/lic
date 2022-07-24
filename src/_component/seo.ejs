@@ -1,0 +1,24 @@
+<% let thispagelink = site.data.sitedata.websiteurl + 
+  (site.data.sitedata.removehtmlext 
+  ? (page.name == 'index.html') ? page.path : page.fullpath.replace('.html','')
+  : page.fullpath);
+%>
+
+<% if (page.data?.title) { %>
+<title><%- page.data.title %></title>
+<meta property="og:title" content="<%- page.data.title %>" />
+<% } %>
+
+<% if (page.data?.description) { %>
+<meta name="description" content="<%- page.data.description %>">
+<meta property="og:description" content="<%- page.data.description %>" />
+<% } %>
+
+<% if (page.data?.pagetype) { %>
+  <meta property="og:type" content="<%- page.data.pagetype %>" />
+<% } %>
+
+<% if(thispagelink) { %>
+<meta property="og:url" content="<%- thispagelink %>" />
+<link rel="canonical" href="<%- thispagelink %>" />
+<% } %>

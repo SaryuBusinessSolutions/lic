@@ -21,26 +21,35 @@ document.querySelectorAll('.inputs').forEach(e => {
     e.firstElementChild.addEventListener('change', () => {
         if (e.classList.contains("correct")) {
             e.classList.add("bg-green-500", "text-white");
+            setTimeout(() => {
+                let first = e.parentElement.parentElement;
+                first.classList.toggle("hidden");
+                first.nextElementSibling.classList.toggle("hidden");
+            }, 250);
         } else {
             e.classList.add("bg-red-500", "text-white");
+            setTimeout(() => {
+                pageReset();
+            }, 250);
         }
-        setTimeout(() => {
-            let first = e.parentElement.parentElement;
-            first.classList.toggle("hidden");
-            first.nextElementSibling.classList.toggle("hidden");
-        }, 250);
-
     });
 });
 
 function pageReset() {
-    document.querySelector(".page:first-of-type").classList.toggle("hidden");
-    document.querySelector(".page:last-of-type").classList.toggle("hidden");
+    if (document.querySelector(".page:first-of-type").classList.contains("hidden")) {
+        document.querySelector(".page:first-of-type").classList.remove("hidden");
+        document.querySelectorAll(".page:not(:first-of-type)").forEach(page => {
+            if (!page.classList.contains("hidden")) {
+                page.classList.add("hidden");
+            }
+        });
+    }
+    document.querySelectorAll('.inputs').forEach(input => {input.firstElementChild.checked=false;})
     document.querySelectorAll(".page label").forEach(label => {
-        if (label.classList.contains("bg-green-500") && label.classList.contains("text-white")) {
-            label.classList.remove("bg-green-500", "text-white");
-        } else if (label.classList.contains("bg-red-500") && label.classList.contains("text-white")) {
-            label.classList.remove("bg-red-500", "text-white");
+        if (label.classList.contains("bg-green-500")) {
+            label.classList.remove("bg-green-500");
+        } else if (label.classList.contains("bg-red-500")) {
+            label.classList.remove("bg-red-500");
         }
     });
 }

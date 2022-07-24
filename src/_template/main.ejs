@@ -2,20 +2,12 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <title>Career in LIC - Become a LIC Agent</title>
-    <meta property="og:title" content="Career in LIC - Become a LIC Agent" />
-    <meta property="og:description"
-        content="At Life Insurance Corporation(LIC) of India, we encourage individuals to join LIC as a insurance advisor by becoming a LIC agent." />
-    <meta name="description"
-        content="At Life Insurance Corporation(LIC) of India, we encourage individuals to join LIC as a insurance advisor by becoming a LIC agent." />
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://careerinlic.in" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://careerinlic.in/" />
+
+    <%- include('seo').trim() %>
 
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -34,17 +26,8 @@
 </head>
 
 <body class="bg-gradient-to-b from-indigo-200 to-yellow-200">
+    
     <%- body %>
-    <%- include('alert') %>
-
-    <% if(_production){ %>
-    <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
-    <script src="js/bundle.js"></script>
-    <% } else { %>
-    <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
-    <script src="js/splide.js"></script>
-    <script src="js/main.js"></script>
-    <% } %>
 
 </body>
 
