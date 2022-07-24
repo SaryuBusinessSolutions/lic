@@ -9,5 +9,5 @@
   "favicon": "favicon.ico",
   "removehtmlext": true,
   "removehtmlextgen": true,
-  "postPath": "/post"
+  "postPath": "/"
 }
