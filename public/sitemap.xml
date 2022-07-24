@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://careerinlic.in/how-to-become-lic-agent-in-mumbai</loc>
-		<lastmod>2022-07-24T12:21:42.595Z</lastmod>
-		<priority>0.80</priority>
-	</url>
-	<url>
 		<loc>https://careerinlic.in/</loc>
 		<lastmod>2022-07-24T12:07:11.052Z</lastmod>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://careerinlic.in/how-to-become-lic-agent-in-mumbai/</loc>
+		<lastmod>2022-07-24T13:14:19.851Z</lastmod>
+		<priority>0.80</priority>
 	</url>
 </urlset>
