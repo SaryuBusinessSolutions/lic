@@ -591,12 +591,12 @@ video {
   top: 0px;
 }
 
-.-top-5 {
-  top: -1.25rem;
+.-top-10 {
+  top: -2.5rem;
 }
 
-.-left-5 {
-  left: -1.25rem;
+.-left-10 {
+  left: -2.5rem;
 }
 
 .-bottom-5 {
@@ -1438,6 +1438,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:-top-5 {
+    top: -1.25rem;
+  }
+
+  .md\:-left-5 {
+    left: -1.25rem;
+  }
+
   .md\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
