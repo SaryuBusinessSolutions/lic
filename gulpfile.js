@@ -7,7 +7,7 @@ var csso = require('gulp-csso');
 const concat = require("gulp-concat");
 const minifyJs = require("gulp-uglify");
 
-const cssfiles = "{fontawsome,tailwind,splide,main}";
+const cssfiles = "{tailwind,splide}";
 const jsfiles = "{splide,main}";
 const cssDest = "./public/css";
 const jsDest = "./public/js";
