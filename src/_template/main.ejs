@@ -28,7 +28,14 @@
 <body class="bg-gradient-to-b from-indigo-200 to-yellow-200">
     
     <%- body %>
-
+    <% if(_production){ %>
+        <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
+        <script src="js/bundle.js"></script>
+        <% } else { %>
+        <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
+        <script src="js/splide.js"></script>
+        <script src="js/main.js"></script>
+        <% } %>
 </body>
 
 </html>
