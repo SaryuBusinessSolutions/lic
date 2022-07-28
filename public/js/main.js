@@ -74,7 +74,8 @@ function popUpInit() {
 // home page splide init
 function splideInit() {
     try {
-        new Splide('.splide', { type: 'loop', autoplay: true, interval: 3000 }).mount();
+        new Splide('#splide1', { type: 'loop', autoplay: true, interval: 3000 }).mount();
+        new Splide('#splide2', { type: 'fade', rewind: true, autoplay: true, interval: 2000, arrows: false, pagination: false }).mount();
     } catch (error) {
         if (showLog) console.log(error);
     }

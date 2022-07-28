@@ -1,7 +1,8 @@
 ---
 {
 "title":"Career in LIC - Become a LIC Agent",
-"description":"At Life Insurance Corporation(LIC) of India, we encourage individuals to join LIC as a insurance advisor by becoming a LIC agent.",
+"description":"At Life Insurance Corporation(LIC) of India, we encourage individuals to join LIC as a insurance advisor
+by becoming a LIC agent.",
 "pagetype":"website"
 }
 ---
@@ -35,7 +36,8 @@
         Contact us</li>
     </ul>
   </nav>
-  <section class="splide-bg splide py-8 relative overflow-hidden" aria-labelledby="Why work as a LIC Agent?">
+  <section id="splide1" class="splide-bg splide py-8 relative overflow-hidden"
+    aria-labelledby="Why work as a LIC Agent?">
     <img src="patternpad-2.svg" class="absolute w-20 md:-top-5 md:-left-5 -top-10 -left-10 rounded-full" alt="">
     <img src="patternpad-2.svg" class="absolute w-20 -bottom-5 -right-5 rounded-full" alt="">
     <h2 id="carousel-heading" class="text-center font-semibold text-3xl pb-8">Why work as a LIC Agent?</h2>
@@ -69,11 +71,61 @@
 
   <main>
     <!-- INTRO START -->
-    <section class="flex flex-col md:flex-row mx-4 my-16 lg:mx-8 space-y-4 md:space-y-0 md:justify-center">
-      <div class="flex justify-center items-start w-full md:w-1/4 md:mr-4">
+    <section class="flex flex-col md:flex-row mx-4 my-16 lg:mx-8 space-y-4 md:space-y-0 items-start">
+      <div class="flex flex-col justify-start items-center w-full md:w-1/4 md:mr-4 space-y-4">
         <button type="button" onclick="popupDisplay();"
-          class="font-bold border-2 px-4 py-2 bg-lic-blue text-white hover:bg-lic-yellow hover:text-black rounded-md border-none text-xl md:text-xs lg:text-xl">ANSWER
+          class="font-bold border-2 px-4 py-2 bg-lic-blue text-white hover:bg-lic-yellow hover:text-black rounded-md border-none text-xl md:text-xs lg:text-base">ANSWER
           5 QUESTIONS AND APPLY FOR FREE</button>
+        <section id="splide2" class="splide" aria-labelledby="carousel-heading">
+          <h2 id="carousel-heading" class="text-center font-bold">Success Stories</h2>
+
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/ASHUTOSH-MISHRA.jpg" alt="ASHUTOSH MISHRA">
+                  <figcaption class="font-semibold w-max mx-auto">ASHUTOSH MISHRA</figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/DEVENDRA-MHATRE.jpg" alt="DEVENDRA MHATRE">
+                  <figcaption class="font-semibold w-max mx-auto">DEVENDRA MHATRE</figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/PRIYESH-SHAH.jpg" alt="PRIYESH SHAH">
+                  <figcaption class="font-semibold w-max mx-auto">PRIYESH SHAH</figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/PUNDALIK-NIKAM.jpg" alt="PUNDALIK NIKAM">
+                  <figcaption class="font-semibold w-max mx-auto">PUNDALIK NIKAM</figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/SIDDESH-GHADGE.jpg" alt="SIDDESH GHADGE">
+                  <figcaption class="font-semibold w-max mx-auto">SIDDESH GHADGE</figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/UDAY-BHUVAD.jpg" alt="UDAY BHUVAD">
+                  <figcaption class="font-semibold w-max mx-auto">UDAY BHUVAD</figcaption>
+                </figure>
+              </li>
+              <li class="splide__slide">
+                <figure>
+                  <img src="<%- page.srcfix %>img/UJWALA-WAGHMARE.jpg" alt="UJWALA WAGHMARE">
+                  <figcaption class="font-semibold w-max mx-auto">UJWALA WAGHMARE</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
       </div>
       <section class="w-full md:w-1/2 flex flex-col justify-center items-center">
         <h1 class="font-semibold text-4xl mb-8 border-b-4 border-b-lic-yellow">CAREER IN LIC</h1>
@@ -92,10 +144,11 @@
           our
           youngsters to use their energy to crate future income.</p>
       </section>
-      <div class="flex justify-center items-start w-full md:w-1/4 md:ml-4">
+      <div class="flex flex-col justify-start items-center w-full md:w-1/4 md:ml-4 space-y-4 md:space-y-8">
         <button type="button" onclick="document.getElementById('apply').scrollIntoView(true);"
-          class="font-bold border-2 px-4 py-2 bg-lic-blue text-white hover:bg-lic-yellow hover:text-black rounded-md border-none text-xl md:text-xs lg:text-xl">APPLY
+          class="font-bold border-2 px-4 py-2 bg-lic-blue text-white hover:bg-lic-yellow hover:text-black rounded-md border-none text-xl md:text-xs lg:text-base">APPLY
           TO BECOME A LIC AGENT</button>
+        <img src="<%- page.srcfix %>img/banner.jpg" alt="banner for LIC seminar">
       </div>
     </section>
     <!-- INTRO END -->
@@ -497,7 +550,8 @@
           </div>
         </div>
         <div class="hidden page">
-          <h2 class="underline underline-offset-8 decoration-lic-yellow md:text-2xl">Congratulations! Submit your details to waive off exam fees &amp; get free study materials.</h2>
+          <h2 class="underline underline-offset-8 decoration-lic-yellow md:text-2xl">Congratulations! Submit your
+            details to waive off exam fees &amp; get free study materials.</h2>
           <div class="flex flex-wrap my-8 space-y-8">
             <div class="w-full md:w-1/2 relative">
               <input type="text" name="name" id="full-name-quiz"
@@ -536,4 +590,6 @@
 <div id="alert"
   class="fixed bottom-0 left-0 p-5 flex flex-col space-y-2.5 justify-end items-end text-white pointer-events-none">
 </div>
-<a href="https://wa.me/917208822646" target="_blank" class="text-white fixed p-4 bottom-5 right-5 bg-green-500 flex items-baseline space-x-2 rounded-2xl"><i class="fa-brands fa-whatsapp"></i><span>Chat with us</span></a>
+<a href="https://wa.me/917208822646" target="_blank"
+  class="text-white fixed p-4 bottom-5 right-5 bg-green-500 flex items-baseline space-x-2 rounded-2xl"><i
+    class="fa-brands fa-whatsapp"></i><span>Chat with us</span></a>
