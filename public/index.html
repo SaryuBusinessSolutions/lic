@@ -460,7 +460,7 @@
     <!-- POPUP START -->
     <div class="hidden fixed top-0 left-0 w-full h-full bg-black/40 z-40 popup justify-center items-center shadow-2xl">
       <form onsubmit="submitForm(event); popupDisplay(); pageReset();"
-        class="popup-content rounded-3xl relative w-4/5 md:w-3/5 h-3/5 lg:w-1/2 bg-gradient-to-br from-lic-blue text-white to-white overflow-y-auto p-4 md:p-8 flex justify-center items-center overflow-x-hidden font-semibold">
+        class="popup-content rounded-3xl relative w-4/5 md:w-3/5 h-5/6 md:h-3/5 lg:h-4/5 xl:h-3/5 lg:w-1/2 bg-gradient-to-br from-lic-blue text-white to-white overflow-y-auto p-4 md:p-8 flex justify-center items-center overflow-x-hidden font-semibold">
         <span
           class="close absolute top-2 right-2 text-2xl cursor-pointer rounded-full border border-transparent w-9 h-9 text-center bg-lic-blue text-white font-bold hover:bg-lic-yellow hover:text-black">&times;</span>
         <div class="page">
@@ -547,6 +547,13 @@
               <label for="phone-quiz"
                 class="absolute -top-1.5 left-2 text-white text-xs peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-200 peer-placeholder-shown:top-4 transition-all peer-focus:-top-1.5 peer-focus:text-white peer-focus:text-xs w-4/5 md:w-auto cursor-text select-none bg-transparent">Mobile
                 Number:</label>
+            </div>
+            <div class="w-full md:w-1/2 relative">
+              <input type="text" name="location" id="location-quiz"
+                class="placeholder-transparent peer mt-4 border-b-2 focus:outline-none focus:border-lic-yellow focus:border-opacity-100 px-2 pb-1 w-4/5 md:w-11/12 lg:w-auto bg-transparent"
+                placeholder="Location" maxlength="100" required>
+              <label for="location-quiz"
+                class="absolute -top-1.5 left-2 text-white text-xs peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-200 peer-placeholder-shown:top-4 transition-all peer-focus:-top-1.5 peer-focus:text-white peer-focus:text-xs w-4/5 md:w-auto cursor-text select-none bg-transparent">Location:</label>
             </div>
             <div class="w-full inline-flex justify-center">
               <button type="submit"

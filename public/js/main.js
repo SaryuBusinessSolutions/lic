@@ -138,6 +138,7 @@ function composeContactMail(formData) {
     body += formData.has('last-name') ? "<p><strong>Name :</strong> " + formData.get('name') + " " + formData.get('last-name') + "</p>" : "<p><strong>Name :</strong> " + formData.get('name') + " " + "</p>";
     body += formData.has('phone') ? "<p><strong>Mobile :</strong> " + formData.get('phone') + "</p>" : "";
     body += formData.has('email') ? "<p><strong>Email :</strong> " + formData.get('email') + "</p>" : "";
+    body += formData.has('location') ? "<p><strong>Location :</strong> " + formData.get('location') + "</p>" : "";
     body += formData.has('profession') ? "<p><strong>Profession :</strong> " + formData.get('profession') + "</p>" : "";
     body += formData.has('city') ? "<p><strong>City :</strong> " + formData.get('city') + "</p>" : "";
     body += formData.has('address') ? "<p><strong>Street address :</strong> " + formData.get('address') + "</p>" : "";
