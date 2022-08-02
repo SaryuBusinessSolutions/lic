@@ -2,44 +2,56 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
 
-    <%- include('seo').trim() %>
+  <%- include('seo').trim() %>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Global site tag (gtag.js) - Google Ads: 1012044683 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1012044683"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-1012044683'); </script>
-    <!-- Event snippet for Website lead conversion page --> <script> gtag('event', 'conversion', {'send_to': 'AW-1012044683/GMNDCJX5otADEIunyuID'}); </script>
+  <!-- Global site tag (gtag.js) - Google Ads: 1012044683 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1012044683"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "AW-1012044683");
+  </script>
+  <!-- Event snippet for Website lead conversion page -->
+  <script>
+    gtag("event", "conversion", {
+      send_to: "AW-1012044683/GMNDCJX5otADEIunyuID",
+    });
+  </script>
 
-    <% if(_production){ %>
-    <link rel="stylesheet" href="<%-page.srcfix%>css/bundle.css">
-    <% } else { %>  
-    <link rel="stylesheet" href="<%-page.srcfix%>css/tailwind.css">
-    <link rel="stylesheet" href="<%-page.srcfix%>css/splide.css">
-    <% } %>
+  <% if(_production){ %>
+  <link rel="stylesheet" href="<%-page.srcfix%>css/bundle.css" />
+  <% } else { %>
+  <link rel="stylesheet" href="<%-page.srcfix%>css/tailwind.css" />
+  <link rel="stylesheet" href="<%-page.srcfix%>css/splide.css" />
+  <% } %>
 </head>
 
 <body class="bg-gradient-to-b from-indigo-200 to-yellow-200">
-    
-    <%- body %>
-    <% if(_production){ %>
-        <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
-        <script src="<%-page.srcfix%>js/bundle.js"></script>
-        <% } else { %>
-        <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
-        <script src="<%-page.srcfix%>js/splide.js"></script>
-        <script src="<%-page.srcfix%>js/main.js"></script>
-        <% } %>
+  <%- body %> <% if(_production){ %>
+  <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
+  <script src="<%-page.srcfix%>js/bundle.js"></script>
+  <% } else { %>
+  <script src="https://kit.fontawesome.com/e05e31a349.js" crossorigin="anonymous"></script>
+  <script src="<%-page.srcfix%>js/splide.js"></script>
+  <script src="<%-page.srcfix%>js/main.js"></script>
+  <% } %>
 </body>
 
 </html>
